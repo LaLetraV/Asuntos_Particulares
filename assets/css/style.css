@@ -86,6 +86,10 @@ summary:hover {
     padding: 30px;
 }
 
+.flatpickr-calendar {
+    margin: auto;
+}
+
 .input-group {
     margin-bottom: 15px;
 }
@@ -158,8 +162,8 @@ table tr:hover {
 }
 
 .action-btn {
-    background: #fc8181;
-    color: white;
+    background: #68d391;
+    color: black;
     padding: 8px 15px;
     border: none;
     border-radius: 6px;
@@ -168,6 +172,21 @@ table tr:hover {
 }
 
 .action-btn:hover {
+    background: #48bb78;
+    transform: translateY(-1px);
+}
+
+.action-btn-dangerous {
+    background: #fc8181;
+    color: black;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.action-btn-dangerous:hover {
     background: #f56565;
     transform: translateY(-1px);
 }
@@ -249,6 +268,7 @@ button:hover {
     padding: 15px;
     border-radius: 8px;
     margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     gap: 10px;

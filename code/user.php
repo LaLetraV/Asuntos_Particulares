@@ -24,6 +24,7 @@ function fetch_user_by_name($username)
 function fetch_user_by_id($id)
 {
     $conn = connect_to_database();
+
     $stmt = $conn->prepare('
         SELECT *
         FROM usuario
@@ -44,7 +45,7 @@ function add_user($username, $password)
 {
     $conn = connect_to_database();
 
-    $stmt = $conn->prepare("
+    $stmt = $conn->prepare('
         INSERT INTO usuario (
             usuario,
             contrasena,
@@ -53,7 +54,7 @@ function add_user($username, $password)
             :username,
             :password,
             :role
-        )");
+        )');
 
     $stmt->bindValue(':username', $username);
     $stmt->bindValue(':password', password_hash($password, PASSWORD_DEFAULT));

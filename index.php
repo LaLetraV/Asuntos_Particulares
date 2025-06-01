@@ -113,21 +113,6 @@ if (!empty($_POST)) {
             transform: translateY(-2px);
         }
 
-        .error-message {
-            background: #fed7d7;
-            color: #c53030;
-            padding: 15px;
-            border-radius: 8px;
-            margin-top: 20px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .error-message i {
-            font-size: 1.2rem;
-        }
-
         .additional-links {
             margin-top: 25px;
             text-align: center;

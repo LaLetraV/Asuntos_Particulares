@@ -16,8 +16,6 @@ if (str_contains($_SERVER['REQUEST_URI'], 'app')) {
         header("Location: /asuntos_particulares");
         exit();
     }
-
-    return $user;
 }
 
 ?>
